@@ -1,0 +1,12 @@
+/* @theme ulaval */
+
+@import 'uncover';
+
+section {
+  background: #fc9;
+}
+
+/* Add "Page" prefix and total page number */
+section::after {
+    content: 'Page ' attr(data-marpit-pagination) ' / ' attr(data-marpit-pagination-total);
+  }
